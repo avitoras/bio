@@ -30,38 +30,47 @@
             </div>
 
             <!-- Блок с устройствами -->
-            <div class="command-section expandable" data-expanded="false">
+            <div class="command-section">
                 <div class="command-line">
                     <span class="prompt">$</span> bio --devices
                 </div>
-                <div class="command-output expandable-output">
-                    <div class="details">
-                        <p><strong>Ноутбук:</strong> Asus FX506LH</p>
-                        <p><strong>Процессор:</strong> Intel Core i5-10300H</p>
-                        <p><strong>ОЗУ:</strong> 16GB DDR4</p>
-                        <p><strong>Графика:</strong> NVIDIA GTX 1650</p>
-                        <p><strong>Смартфон:</strong> Xperia 5 II</p>
-                        <p><strong>Процессор:</strong> Qualcomm Snapdragon 865</p>
-                        <p><strong>ОЗУ:</strong> 8GB</p>
-                        <p><strong>Экран:</strong> OLED, 6.1 дюймов, 120 Гц</p>
+                <div class="command-output">
+                    <div class="expandable" data-expanded="false">
+                        <p class="clickable"><span class="arrow">&gt;</span><strong>Ноутбук:</strong> Asus FX506LH</p>
+                        <div class="details">
+                            <p><strong>Процессор:</strong> Intel Core i5-10300H</p>
+                            <p><strong>ОЗУ:</strong> 16GB DDR4</p>
+                            <p><strong>Графика:</strong> NVIDIA GTX 1650</p>
+                        </div>
+                    </div>
+                    <div class="expandable" data-expanded="false">
+                        <p class="clickable"><span class="arrow">&gt;</span><strong>Смартфон:</strong> Xperia 5 II</p>
+                        <div class="details">
+                            <p><strong>Процессор:</strong> Qualcomm Snapdragon 865</p>
+                            <p><strong>ОЗУ:</strong> 8GB</p>
+                            <p><strong>Экран:</strong> OLED, 6.1 дюймов, 120 Гц</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Блок с операционной системой -->
-            <div class="command-section expandable" data-expanded="false">
+    <!-- Блок с операционной системой -->
+                <div class="command-section">
                 <div class="command-line">
-                    <span class="prompt">$</span> bio --os
-                </div>
-                <div class="command-output expandable-output">
-                    <div class="details">
-                        <p><strong>Дистрибутив:</strong> Gentoo GNU/Linux</p>
-                        <p><strong>Версия ядра:</strong> 5.15.32</p>
-                        <p><strong>Пакетный менеджер:</strong> Portage</p>
-                        <p><strong>Особенности:</strong> Высокая кастомизация, компиляция из исходников</p>
-                    </div>
-                </div>
+             <span class="prompt">$</span> bio --os
+        </div>
+        <div class="command-output">
+        <div class="expandable" data-expanded="false">
+            <p class="clickable"><span class="arrow">&gt;</span><strong>Операционная система:</strong> Gentoo GNU/Linux</p>
+            <div class="details">
+                <p><strong>Версия ядра:</strong> 5.15.32</p>
+                <p><strong>Пакетный менеджер:</strong> Portage</p>
+                <p><strong>Особенности:</strong> Высокая кастомизация, компиляция из исходников</p>
             </div>
+        </div>
+    </div>
+</div>
+
         </section>
     </main>
 </body>

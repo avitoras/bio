@@ -61,7 +61,7 @@ body, html {
     color: #9ca571;
     padding: 10px;
     border-radius: 10px 10px 0 0;
-    margin-bottom: 10px;
+    margin-bottom: 0; /* Убираем отступ снизу */
 }
 
 .command-output {
@@ -70,24 +70,50 @@ body, html {
     color: #9ca571;
     padding: 10px;
     border-radius: 0 0 10px 10px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Устанавливаем отступ только после блока */
     box-sizing: border-box;
 }
 
-/* Для раскрывающихся блоков */
+/* Оформление раскрывающихся блоков */
 .expandable {
     cursor: pointer;
     margin-bottom: 10px;
 }
 
-.expandable .command-output {
+.expandable .details {
     display: none;
 }
 
-.expandable[data-expanded="true"] .command-output {
+.expandable[data-expanded="true"] .details {
     display: block;
 }
 
-.details {
-    margin-left: 20px;
+.arrow {
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+    margin-right: 8px; /* Добавляем отступ справа */
 }
+
+
+.expandable[data-expanded="true"] .arrow {
+    transform: rotate(90deg);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 10px; /* Добавим отступ снизу для отступа */
+}
+
+.command-output .expandable {
+    margin-bottom: 1px; /* Добавляем такой же отступ, как и у других блоков */
+}
+
+.command-output .details {
+    margin-left: 1px; /* Сохраняем отступ для вложенных элементов */
+}
+.details {
+    padding-left: 29px; /* Добавляем отступ внутри для эффекта красной строки */
+    text-indent: 0; /* Убедимся, что нет других изменений в отступах текста */
+}
+

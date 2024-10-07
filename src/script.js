@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const expandableSections = document.querySelectorAll('.expandable');
+    const expandables = document.querySelectorAll('.expandable');
 
-    expandableSections.forEach(section => {
-        section.addEventListener('click', () => {
-            const isExpanded = section.getAttribute('data-expanded') === 'true';
-            section.setAttribute('data-expanded', !isExpanded);
+    expandables.forEach(expandable => {
+        expandable.addEventListener('click', () => {
+            const isExpanded = expandable.getAttribute('data-expanded') === 'true';
+            expandable.setAttribute('data-expanded', !isExpanded);
         });
     });
 });
