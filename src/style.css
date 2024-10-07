@@ -10,10 +10,13 @@ body, html {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
+    background: url('img/winter2.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .centered {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
+    color: white;
 }
