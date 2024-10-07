@@ -25,20 +25,58 @@ body, html {
 .text-box {
     font-size: 48px;
     font-weight: bold;
-    color: #9ca571; /* Цвет текста */
-    background-color: #262721; /* Цвет плашки */
-    padding: 20px 40px; /* Отступы вокруг текста */
-    border-radius: 25px; /* Закругленные углы */
+    color: #9ca571;
+    background-color: #262721;
+    padding: 20px 40px;
+    border-radius: 25px;
     text-align: center;
     margin-top: 20px;
 }
 
 .small-box {
     font-size: 20px;
-    color: #9ca571; /* Цвет текста, аналогично основному блоку */
-    background-color: #262721; /* Цвет фона, как у основной плашки */
-    padding: 10px 20px; /* Пропорционально уменьшенные отступы */
-    border-radius: 15px; /* Закругленные углы */
+    color: #9ca571;
+    background-color: #262721;
+    padding: 10px 20px;
+    border-radius: 15px;
     text-align: center;
-    margin-top: 10px; /* Меньше отступ для плотности */
+    margin-top: 10px;
+}
+
+.info-box {
+    font-size: 20px;
+    color: #9ca571;
+    background-color: #262721;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: left;
+    margin-top: 20px;
+    width: 750px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.command-section {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.command-line {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #2a2c1e;
+    color: #9ca571;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.command-output {
+    font-family: "Courier New", Courier, monospace;
+    color: #9ca571;
+    background-color: #4a4d3a;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
 }
