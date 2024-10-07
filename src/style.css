@@ -11,23 +11,34 @@ body, html {
     font-family: Arial, sans-serif;
     background: url('img/winter2.jpg') no-repeat center center fixed;
     background-size: cover;
+    flex-direction: column;
 }
 
 .centered {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
-    height: 100%; 
+    justify-content: flex-start;
     align-items: center;
+    height: 100%;
 }
 
 .text-box {
     font-size: 48px;
     font-weight: bold;
-    color: #9ca571; 
-    background-color: #262721; 
-    padding: 20px 40px; 
-    border-radius: 25px; 
+    color: #9ca571; /* Цвет текста */
+    background-color: #262721; /* Цвет плашки */
+    padding: 20px 40px; /* Отступы вокруг текста */
+    border-radius: 25px; /* Закругленные углы */
     text-align: center;
-    margin-top: 20px; 
+    margin-top: 20px;
+}
+
+.small-box {
+    font-size: 20px;
+    color: #9ca571; /* Цвет текста, аналогично основному блоку */
+    background-color: #262721; /* Цвет фона, как у основной плашки */
+    padding: 10px 20px; /* Пропорционально уменьшенные отступы */
+    border-radius: 15px; /* Закругленные углы */
+    text-align: center;
+    margin-top: 10px; /* Меньше отступ для плотности */
 }
