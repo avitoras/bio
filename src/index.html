@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,13 @@
     <main class="centered">
         <section class="intro">
             <h1 class="text-box">avitoras</h1>
-            <p class="small-box">aka yamadey</p>
+            <p class="alias">aka yamadey</p>
         </section>
 
         <section class="info-box">
             <h2 class="title">Обо мне</h2>
+
+            <!-- Блок с персональной информацией -->
             <div class="command-section">
                 <div class="command-line">
                     <span class="prompt">$</span> bio --me
@@ -27,42 +29,36 @@
                 </div>
             </div>
 
-            <div class="command-section">
+            <!-- Блок с устройствами -->
+            <div class="command-section expandable" data-expanded="false">
                 <div class="command-line">
                     <span class="prompt">$</span> bio --devices
                 </div>
                 <div class="command-output expandable-output">
-                    <div class="expandable" data-expanded="false">
-                        <p class="clickable"><span class="arrow">&gt;</span><strong>Ноутбук:</strong> Asus FX506LH</p>
-                        <div class="details">
-                            <p><strong>Процессор:</strong> Intel Core i5-10300H</p>
-                            <p><strong>Оперативная память:</strong> 16GB DDR4</p>
-                            <p><strong>Графика:</strong> NVIDIA GTX 1650</p>
-                        </div>
-                    </div>
-                    <div class="expandable" data-expanded="false">
-                        <p class="clickable"><span class="arrow">&gt;</span><strong>Смартфон:</strong> Xperia 5 II</p>
-                        <div class="details">
-                            <p><strong>Процессор:</strong> Qualcomm Snapdragon 865</p>
-                            <p><strong>Оперативная память:</strong> 8GB</p>
-                            <p><strong>Экран:</strong> OLED, 6.1 дюймов, 120 Гц</p>
-                        </div>
+                    <div class="details">
+                        <p><strong>Ноутбук:</strong> Asus FX506LH</p>
+                        <p><strong>Процессор:</strong> Intel Core i5-10300H</p>
+                        <p><strong>ОЗУ:</strong> 16GB DDR4</p>
+                        <p><strong>Графика:</strong> NVIDIA GTX 1650</p>
+                        <p><strong>Смартфон:</strong> Xperia 5 II</p>
+                        <p><strong>Процессор:</strong> Qualcomm Snapdragon 865</p>
+                        <p><strong>ОЗУ:</strong> 8GB</p>
+                        <p><strong>Экран:</strong> OLED, 6.1 дюймов, 120 Гц</p>
                     </div>
                 </div>
             </div>
 
-            <div class="command-section">
+            <!-- Блок с операционной системой -->
+            <div class="command-section expandable" data-expanded="false">
                 <div class="command-line">
                     <span class="prompt">$</span> bio --os
                 </div>
                 <div class="command-output expandable-output">
-                    <div class="expandable" data-expanded="false">
-                        <p class="clickable"><span class="arrow">&gt;</span><strong>Дистрибутив:</strong> Gentoo GNU/Linux</p>
-                        <div class="details">
-                            <p><strong>Версия ядра:</strong> 5.15.32</p>
-                            <p><strong>Пакетный менеджер:</strong> Portage</p>
-                            <p><strong>Особенности:</strong> Высокая кастомизация, компиляция из исходников</p>
-                        </div>
+                    <div class="details">
+                        <p><strong>Дистрибутив:</strong> Gentoo GNU/Linux</p>
+                        <p><strong>Версия ядра:</strong> 5.15.32</p>
+                        <p><strong>Пакетный менеджер:</strong> Portage</p>
+                        <p><strong>Особенности:</strong> Высокая кастомизация, компиляция из исходников</p>
                     </div>
                 </div>
             </div>

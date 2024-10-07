@@ -34,7 +34,7 @@ body, html {
     text-align: center;
 }
 
-.small-box {
+.alias {
     font-size: 20px;
     color: #9ca571;
     background-color: #262721;
@@ -61,6 +61,7 @@ body, html {
     color: #9ca571;
     padding: 10px;
     border-radius: 10px 10px 0 0;
+    margin-bottom: 10px;
 }
 
 .command-output {
@@ -73,20 +74,20 @@ body, html {
     box-sizing: border-box;
 }
 
+/* Для раскрывающихся блоков */
 .expandable {
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.arrow,
-.clickable-text {
-    cursor: pointer;
-    font-weight: bold;
-    margin-right: 7px;
-    transition: transform 0.3s ease;
+.expandable .command-output {
+    display: none;
+}
+
+.expandable[data-expanded="true"] .command-output {
+    display: block;
 }
 
 .details {
-    display: none;
     margin-left: 20px;
 }
