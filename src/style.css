@@ -8,15 +8,26 @@ body, html {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     font-family: Arial, sans-serif;
     background: url('img/winter2.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 .centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    height: 100%; 
+    align-items: center;
+}
+
+.text-box {
     font-size: 48px;
     font-weight: bold;
+    color: #9ca571; 
+    background-color: #262721; 
+    padding: 20px 40px; 
+    border-radius: 25px; 
     text-align: center;
-    color: white;
+    margin-top: 20px; 
 }
