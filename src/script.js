@@ -1,10 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const expandables = document.querySelectorAll('.expandable');
+document.querySelectorAll('.clickable').forEach(function(element) {
+    element.addEventListener('click', function() {
+        const details = element.nextElementSibling; // Получаем следующий элемент (div с классом details)
+        const isExpanded = element.parentElement.getAttribute('data-expanded') === 'true';
 
-    expandables.forEach(expandable => {
-        expandable.addEventListener('click', () => {
-            const isExpanded = expandable.getAttribute('data-expanded') === 'true';
-            expandable.setAttribute('data-expanded', !isExpanded);
-        });
+        details.style.display = isExpanded ? 'none' : 'block'; // Скрываем или показываем детали
+        element.parentElement.setAttribute('data-expanded', !isExpanded); // Обновляем атрибут
     });
 });

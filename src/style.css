@@ -118,20 +118,19 @@ body, html {
 }
 
 a {
-    color: #9ca571; /* Цвет в стилистике сайта */
-    text-decoration: underline; /* Подчёркивание для выделения */
-    font-weight: bold; /* Жирный текст для акцента */
-    transition: color 0.3s ease; /* Плавное изменение цвета */
+    color: #9ca571; 
+    text-decoration: underline; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
 }
 
 a:hover {
-    color: #b7d27d; /* Изменение цвета при наведении для кликабельности */
+    color: #b7d27d; 
 }
 
 @media (max-width: 768px) {
     .text-box, .alias, .info-box {
-        /* Убираем изменение радиусов */
-        padding: 10px 20px; /* Меньше отступов */
+        padding: 10px 20px; 
     }
 
     .arrow {
@@ -142,34 +141,45 @@ a:hover {
     }
 
     .info-box {
-        width: 100%; /* Сделаем адаптацию ширины */
-        font-size: 16px; /* Уменьшаем шрифт, чтобы текст не выглядел громоздким */
+        width: 100%; 
+        font-size: 16px; 
     }
 
     .command-line, .command-output {
         font-size: 16px;
-        padding: 5px; /* Сокращаем поля для компактности */
+        padding: 5px; 
     }
     
-    /* Отключение синего выделения при клике в Chrome на Android */
+
 a, button, .clickable {
-    -webkit-tap-highlight-color: transparent; /* Полное отключение подсвечивания */
-    outline: none; /* Убираем фокус-рамку */
+    -webkit-tap-highlight-color: transparent; 
+    outline: none; 
 }
 
 a:focus, button:focus, .clickable:focus {
-    outline: none; /* Убираем фокусное выделение */
+    outline: none; 
 }
 
 html, body, a, button, .clickable {
-    -webkit-user-select: none; /* Отключаем выделение текста */
+    -webkit-user-select: none; 
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* Для Chrome и Android */
-    touch-action: manipulation; /* Отключение задержки для кликов */
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    touch-action: manipulation; 
+}
 }
 
+body, html, a, button, .clickable, .text-box, .alias, .info-box {
+    -webkit-user-select: none; /* Отключаем выделение текста в Safari и Chrome */
+    -moz-user-select: none; /* Отключаем выделение текста в Firefox */
+    -ms-user-select: none; /* Отключаем выделение текста в старых версиях IE */
+    user-select: none; /* Отключаем выделение текста во всех остальных браузерах */
+}
+
+/* Разрешаем выделение только для этого элемента */
+.allowed-to-select {
+    user-select: text;
 }
 
 
