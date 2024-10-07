@@ -1,3 +1,4 @@
+/* Основные и сброс стилей */
 * {
     margin: 0;
     padding: 0;
@@ -6,20 +7,21 @@
 
 body, html {
     height: 100%;
-    display: flex;
-    justify-content: center;
     font-family: Arial, sans-serif;
     background: url('img/winter2.jpg') no-repeat center center fixed;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .centered {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     height: 100%;
+    padding: 20px;
 }
 
 .text-box {
@@ -30,7 +32,6 @@ body, html {
     padding: 20px 40px;
     border-radius: 25px;
     text-align: center;
-    margin-top: 20px;
 }
 
 .small-box {
@@ -44,25 +45,14 @@ body, html {
 }
 
 .info-box {
-    font-size: 20px;
+    font-size: 18px;
     color: #9ca571;
     background-color: #262721;
-    padding: 30px;
+    padding: 20px;
     border-radius: 25px;
-    text-align: left;
     margin-top: 20px;
     width: 750px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.title {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.command-section {
-    width: 100%;
-    margin-bottom: 20px;
 }
 
 .command-line {
@@ -71,44 +61,32 @@ body, html {
     color: #9ca571;
     padding: 10px;
     border-radius: 10px 10px 0 0;
-    display: flex;
-    align-items: center;
 }
 
 .command-output {
     font-family: "Courier New", Courier, monospace;
-    color: #9ca571;
     background-color: #4a4d3a;
-    padding: 15px;
+    color: #9ca571;
+    padding: 10px;
     border-radius: 0 0 10px 10px;
-}
-
-.github-link {
-    color: #b3d944;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.github-link:hover {
-    color: #d1f76a;
-    text-decoration: underline;
-    cursor: pointer;
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .expandable {
     cursor: pointer;
-    display: flex;
-    align-items: center;
+    margin-bottom: 5px;
 }
 
-.arrow {
-    display: inline-block;
+.arrow,
+.clickable-text {
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 7px;
     transition: transform 0.3s ease;
-    margin-right: 8px;
-    font-size: 18px;
 }
 
 .details {
-    margin-left: 20px;
     display: none;
+    margin-left: 20px;
 }

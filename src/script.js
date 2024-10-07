@@ -1,18 +1,15 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const expandableItems = document.querySelectorAll('.expandable');
 
-    expandableItems.forEach((expandable) => {
-        const details = expandable.nextElementSibling;
-        const arrow = expandable.querySelector('.arrow');
-
-        expandable.addEventListener('click', function () {
-            if (details.style.display === 'none' || details.style.display === '') {
-                details.style.display = 'block';
-                arrow.textContent = 'v'; // Изменение стрелки на вниз
-            } else {
-                details.style.display = 'none';
-                arrow.textContent = '>'; // Вернуть стрелку вправо
-            }
+    expandableItems.forEach(item => {
+        const clickable = item.querySelector('.clickable');
+        const details = item.querySelector('.details');
+        
+        clickable.addEventListener('click', () => {
+            const isExpanded = details.style.display === 'block';
+            details.style.display = isExpanded ? 'none' : 'block';
+            const arrow = clickable.querySelector('.arrow');
+            arrow.textContent = isExpanded ? '>' : 'v';
         });
     });
 });
