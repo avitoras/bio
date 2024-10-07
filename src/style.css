@@ -171,13 +171,12 @@ html, body, a, button, .clickable {
 }
 
 body, html, a, button, .clickable, .text-box, .alias, .info-box {
-    -webkit-user-select: none; /* Отключаем выделение текста в Safari и Chrome */
-    -moz-user-select: none; /* Отключаем выделение текста в Firefox */
-    -ms-user-select: none; /* Отключаем выделение текста в старых версиях IE */
-    user-select: none; /* Отключаем выделение текста во всех остальных браузерах */
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;  */
+    user-select: none; 
 }
 
-/* Разрешаем выделение только для этого элемента */
 .allowed-to-select {
     user-select: text;
 }
