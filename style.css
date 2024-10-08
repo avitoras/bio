@@ -181,5 +181,132 @@ body, html, a, button, .clickable, .text-box, .alias, .info-box {
     user-select: text;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons i {
+    color: #9ca571; 
+    transition: transform 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.1);
+    color: #b7d27d; 
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    position: relative; 
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    background-color: transparent;
+    position: absolute;
+    bottom: 10px; 
+    left: 0;
+    right: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;  
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    background-color: transparent;
+    margin-top: auto;  
+    position: relative; 
+}
+
+.social-box {
+    background-color: #262721;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    text-decoration: none;  /* Убираем подчеркивание ссылок */
+}
+
+.social-box:hover {
+    background-color: #4a4d3a;
+}
+
+.social-icons i {
+    color: #9ca571;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.1);
+    color: #b7d27d;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 0;  
+    }
+
+    main {
+        padding-bottom: 80px; 
+    }
+
+    .social-icons i {
+        font-size: 2.3rem; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
