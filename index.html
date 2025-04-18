@@ -1,91 +1,75 @@
 <!DOCTYPE html>
 <html lang="ru">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About me</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <main class="centered">
-        <section class="intro">
-            <h1 class="text-box">avitoras</h1>
-            <p class="alias">aka yamadey</p>
-        </section>
-        <section class="info-box">
-            <h2 class="title">Обо мне</h2>
-            <div class="command-section">
-                <div class="command-line">
-                    <span class="prompt">$</span> bio --me
-                </div>
-                <div class="command-output static-output">
-                    <p><strong>Имя:</strong> Константин</p>
-                    <p><strong>Возраст:</strong> 14</p>
-                    <p><strong>Город:</strong> Москва</p>
-                        
-                </div>
+<body> <div class="container">
+        <div class="teto-image">
+            <img src="./img/Teto.webp">
+        </div>
+
+        <div class="content-card">
+            <div class="card-header">
+                <h1>avitoras</h1> 
             </div>
-            <div class="command-section">
-                <div class="command-line">
-                    <span class="prompt">$</span> bio --devices
-                </div>
-                <div class="command-output">
-                    <div class="expandable" data-expanded="false">
-                        <p class="clickable"><span class="arrow">&gt;</span><strong>Ноутбук:</strong> Asus FX506LH</p>
-                        <div class="details">
-                            <p class="allowed-to-select"><strong>ЦПУ:</strong> Intel Core i5-10300H</p>
-                            <p class="allowed-to-select"><strong>ОЗУ:</strong> 16GB DDR4</p>
-                            <p class="allowed-to-select" ><strong>ГПУ:</strong> NVIDIA GTX 1650</p>
-                            <p class="allowed-to-select"strong>ССД:</strong> Micron and Patriot 512GB</p>
-                        </div>
-                    </div>
-                    <div class="expandable" data-expanded="false">
-                        <p class="clickable"><span class="arrow">&gt </span><strong>Смартфон:</strong> Xperia 5 II</p>
-                        <div class="details">
-                            <p class="allowed-to-select"><strong>Процессор:</strong> Qualcomm Snapdragon 865</p>
-                            <p class="allowed-to-select"><strong>ОЗУ:</strong> 8GB</p>
-                            <p class="allowed-to-select"><strong>Экран:</strong> OLED, 6.1 дюймов, 120 Гц</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-     <!-- Блок с операционной системой -->
-<div class="command-section">
-    <div class="command-line">
-        <span class="prompt">$</span> bio --os
-    </div>
-    <div class="command-output">
-        <div class="expandable" data-expanded="false">
-            <p class="clickable"><span class="arrow">&gt;</span><strong>Операционная система:</strong> Arch GNU/Linux</p>
-            <div class="details">
-                <p class="allowed-to-select"></element><strong>Оконный менеджер:</strong> Hyprland</p>
-                <p class="allowed-to-select"></pclass><strong>Версия ядра:</strong> 6.11.8</p>
-                <p class="allowed-to-select"></p><strong>Оболочка Shell:</strong> Fish</p>
-                <p class="allowed-to-select"></p><strong>Дотфайлы: </strong><a class="allowed-to-select" href="https://github.com/spbog/dotfiles">GitHub</a></p>
+
+            <section class="card-section">
+                <h2>Обо мне</h2>
+                <p><strong>Имя:</strong> Костя</p>
+                <p><strong>Возраст:</strong> 14</p>
+                <p><strong>Город:</strong> Москва</p>
+            </section>
+
+            <section class="card-section">
+                <h2>Мои девайсы</h2>
+                <ul>
+                    <li><strong>Телефон:</strong> OnePlus 9 Pro (Зеркальный, <br> Процессор Snapdragon 888, 12/256 ГБ)</li>
+                    <li><strong>Мышь:</strong> Glorious Model O (Черная)</li>
+                    <li><strong>Клавиатура:</strong> Logitech G412 TKL SE</li>
+                    <li><strong>Наушники:</strong> Redmi Buds 5 Pro (Черные)</li>
+                    <li><strong>Ноутбук:</strong> ASUS TUF FX506LH (Core i5-10gen, <br>16 ГБ ОЗУ, GTX 1650, NVMe Micron 512 ГБ)</li>
+                </ul>
+            </section>
+
+            <section class="card-section">
+                <h2>О моем ПК</h2>
+                <ul>
+                    <li><strong>Мат. плата:</strong> ASUS TUF B550-PLUS</li>
+                    <li><strong>Оперативка:</strong> XPG 32 ГБ 3600 MHz</li>
+                    <li><strong>Накопители:</strong> Patriot P300 512 ГБ NVMe,<br> Samsung 160 ГБ HDD 7200 RPM</li>
+                    <li><strong>Процессор:</strong> Ryzen 7 5700X</li>
+                    <li><strong>Видеокарта:</strong> Sapphire RX 580 8 ГБ Nitro+</li>
+                </ul>
+            </section>
+
+            <section class="card-section">
+                <h2>О моей ОС</h2>
+                <p><strong>ОС:</strong> Arch Linux</p>
+                <p><strong>Конфигурация (dotfiles):</strong> <a href="https://github.com/avitoras/dotfiles" target="_blank">Hyprland</a></p>
+            </section>
+
+            <div class="social-links">
+                <a href="https://t.me/avitoras" target="_blank" aria-label="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://github.com/avitoras" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.last.fm/user/avitoras" target="_blank" aria-label="Last.fm">
+                    <i class="fab fa-lastfm"></i>
+                    <span>Last.fm</span>
+                </a>
             </div>
         </div>
     </div>
-</div>
 
-        </section>
-        <main class="centered">
-        </main>
-        <footer class="social-icons">
-            <a href="https://t.me/avitoras" target="_blank" class="social-box">
-                <i class="fab fa-telegram fa-2x"></i>
-            </a>
-            <a href="https://github.com/avitoras" target="_blank" class="social-box">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://tiktok.com/@7192266564991861765" target="_blank" class="social-box">
-                <i class="fab fa-tiktok fa-2x"></i>
-            </a>
-        </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>

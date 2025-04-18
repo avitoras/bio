@@ -1,9 +1,34 @@
-document.querySelectorAll('.clickable').forEach(function(element) {
-    element.addEventListener('click', function() {
-        const details = element.nextElementSibling; // Получаем следующий элемент (div с классом details)
-        const isExpanded = element.parentElement.getAttribute('data-expanded') === 'true';
-
-        details.style.display = isExpanded ? 'none' : 'block'; // Скрываем или показываем детали
-        element.parentElement.setAttribute('data-expanded', !isExpanded); // Обновляем атрибут
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+    const themeStorageKey = 'user-theme'; 
+    function applyTheme(theme) {
+        if (theme === 'dark') {
+            body.classList.add('dark-theme');
+        } else {
+            body.classList.remove('dark-theme');
+        }
+    }
+    const savedTheme = localStorage.getItem(themeStorageKey);
+    let initialTheme;
+    if (savedTheme) {
+        initialTheme = savedTheme; 
+    } else {
+        
+        initialTheme = 'light'; 
+    }
+    applyTheme(initialTheme);
+    updateThemeIcons(initialTheme === 'dark');
+     if (!savedTheme) {
+         localStorage.setItem(themeStorageKey, initialTheme);
+     }
+    themeToggleBtn.addEventListener('click', () => {
+        const isDark = body.classList.contains('dark-theme');
+        const newTheme = isDark ? 'light' : 'dark'; 
+        applyTheme(newTheme); 
+        updateThemeIcons(newTheme === 'dark'); 
+        localStorage.setItem(themeStorageKey, newTheme);
     });
+
 });
